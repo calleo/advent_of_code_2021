@@ -1,5 +1,5 @@
 def solve(board)
-    moves = File.open('04a_input.txt').first.chomp.split(',').map(&:to_i)
+    moves = File.open('04_input.txt').first.chomp.split(',').map(&:to_i)
     moves.each_with_index do |move, count|
         board.each do |line|
             line = line.delete(move)
