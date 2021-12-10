@@ -49,6 +49,5 @@ def basins(low_points)
   end
 end
 
-
 puts("risk level: #{low_points.map{ |r| r.height + 1 }.sum}")
 puts("basins: #{basins(low_points).map{ |b| b.length }.sort.reverse.take(3).reduce(&:*)}")
